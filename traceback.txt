@@ -1,0 +1,40 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 14, in script
+    play music illurock.opus
+  File "renpy/common/000statements.rpy", line 124, in execute_play_music
+    renpy.music.play(_audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 33, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
+  File "game/script.rpy", line 14, in <module>
+    play music illurock.opus
+NameError: name 'illurock' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 14, in script
+    play music illurock.opus
+  File "C:\Users\luann\Desktop\renpy-8.3.4-sdk\renpy\ast.py", line 1980, in execute
+    self.call("execute")
+  File "C:\Users\luann\Desktop\renpy-8.3.4-sdk\renpy\ast.py", line 1959, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\luann\Desktop\renpy-8.3.4-sdk\renpy\statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 124, in execute_play_music
+    renpy.music.play(_audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 33, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
+  File "C:\Users\luann\Desktop\renpy-8.3.4-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\luann\Desktop\renpy-8.3.4-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 14, in <module>
+    play music illurock.opus
+NameError: name 'illurock' is not defined
+
+Windows-10-10.0.19041 AMD64
+Ren'Py 8.3.4.24120703
+The Question 7.0
+Fri Feb 14 03:36:05 2025

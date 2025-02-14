@@ -7,7 +7,7 @@ define m = Character(_("Me"), color="#c8c8ff")
 default book = False
 
 # The game starts here.
-label start:
+label go:
 
     # Start by playing some music.
     play music "illurock.opus"
